@@ -6,22 +6,17 @@ body{
 }
 #header{
     display: flex;
-    /* flex-direction: row; */
-    /* height: 50px; */
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
     background: #E3E6F3;
     box-shadow: 0 5PX 15PX rgba(0,0,0, 0.06);
+    z-index: 999;
+    position:sticky;
+    top: 0px;
+    left: 0; 
 }
-/* #header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(10, 116, 158);
-    padding: 10px 20px 60px 80px;
-    box-shadow: 0px 5px 10px bgra(0,0,0,0.06);
-} */
+
 #navbar{
     display: flex;
     align-items: center;
@@ -51,12 +46,64 @@ body{
     position: absolute;
     background-color: rgb(109, 203, 240);
 }
-#semi{
+
+/* Home page */
+#hero{
+    background-image: url(' ');
+    background-color:rgb(222, 237, 243) ;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
     display: flex;
-    position: absolute;
-    width: 50%;
-    height: 5rem;
-    background: rgb(234, 229, 229);
-    margin-top: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4 {
+    padding-bottom: 15px;
+}
+#hero h1 {
+    color: #088178;
+}
+#hero button {
+    background-image: url(' ');
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #fddde4;
+
 }
 
+/* Features section --------------------- */
+
+#feature{padding: 0px 80px;}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature img{
+    width:100%;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 20px 20px 34px rgba(0,0,0, 0.03) ;
+}
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
