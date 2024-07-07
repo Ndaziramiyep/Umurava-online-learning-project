@@ -83,7 +83,13 @@ body{
 
 /* Features section --------------------- */
 
-#feature{padding: 0px 80px;}
+#feature{
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 #feature .fe-box{
     width: 180px;
     text-align: center;
@@ -93,8 +99,9 @@ body{
     border-radius: 4px;
     margin: 15px 0;
 }
-#feature img{
+#feature .fe-box img{
     width:100%;
+    margin-bottom: 10px;
 }
 
 #feature .fe-box:hover{
