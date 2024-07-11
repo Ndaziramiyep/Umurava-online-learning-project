@@ -234,3 +234,13 @@ border-radius: 20px;
     font-size: 30px;
     padding: 10px 0;
 }
+#banner h4{
+    color: #fff;
+}
+#banner h2 span{
+    color: #ef3636;
+}
+#banner button:hover {
+    background: #088178;
+    color: #fff;
+}
