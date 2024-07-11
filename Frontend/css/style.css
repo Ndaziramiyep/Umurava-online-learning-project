@@ -200,3 +200,18 @@ border-radius: 20px;
     bottom: 20px;
     right: 10px;
 }
+
+/* --------------- section-m1 css------------ */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url("../img/Isimbi1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
