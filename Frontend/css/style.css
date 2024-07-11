@@ -245,3 +245,16 @@ border-radius: 20px;
     background: #088178;
     color: #fff;
 }
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url("../img/Isimbi1.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
