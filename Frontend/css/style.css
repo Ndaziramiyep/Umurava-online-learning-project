@@ -1,6 +1,20 @@
 *{
     margin: 0;
 }
+
+button.normal{
+    font-size: 14px;
+    font-weight: 14px;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
 body{
     width: 100%;
 }
@@ -214,4 +228,9 @@ border-radius: 20px;
     height: 40vh;
     background-size: cover;
     background-position: center;
+}
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
 }
