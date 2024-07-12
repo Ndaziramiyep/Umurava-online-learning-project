@@ -279,6 +279,22 @@ border-radius: 20px;
 #sm-banner .banner-box2{
     background-image: url("../img/Isimbi1.jpg");
 }
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
 
 #sm-banner .banner-box:hover button {
     background: #088178;
