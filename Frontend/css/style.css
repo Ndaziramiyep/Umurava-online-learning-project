@@ -301,7 +301,7 @@ border-radius: 20px;
     border: 1px solid #088178;
 }
 
-.banner3{
+#banner3{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -310,7 +310,7 @@ border-radius: 20px;
 
 #banner3 .banner-box{
     display: flex;
-    flex-direction: colum;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     background-image: url("../img/Isimbi1.jpg");
@@ -321,6 +321,14 @@ border-radius: 20px;
     padding: 20px;
     margin-bottom: 20px;
 }
+
+#banner3 .banner-box2{
+    background-image: url("../img/Isimbi1.jpg");
+}
+#banner3 .banner-box3{
+    background-image: url("../img/Isimbi1.jpg");
+}
+
 #banner h2{
     color: #fff;
     font-weight: 900;
