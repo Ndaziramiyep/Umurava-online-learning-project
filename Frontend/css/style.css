@@ -314,3 +314,13 @@ border-radius: 20px;
     padding: 20px;
     margin-bottom: 20px;
 }
+#banner h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner h3{
+    color: #ec544e;
+    font-weight: 900;
+    font-size: 22px;
+}
