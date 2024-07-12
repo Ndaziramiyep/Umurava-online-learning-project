@@ -275,3 +275,12 @@ border-radius: 20px;
     background-size: cover;
     background-position: center;
 }
+
+#sm-banner .banner-box2{
+    background-image: url("../img/Isimbi1.jpg");
+}
+
+#sm-banner .banner-box:hover button {
+    background: #088178;
+    border: 1px solid #088178;
+}
