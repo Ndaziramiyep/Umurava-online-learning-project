@@ -300,3 +300,17 @@ border-radius: 20px;
     background: #088178;
     border: 1px solid #088178;
 }
+
+#banner .banner-box{
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("../img/Isimbi1.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
