@@ -274,6 +274,7 @@ border-radius: 20px;
     height: 50vh;
     background-size: cover;
     background-position: center;
+    padding: 30px;
 }
 
 #sm-banner .banner-box2{
@@ -319,6 +320,7 @@ border-radius: 20px;
     background-size: cover;
     background-position: center;
     padding: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -329,12 +331,12 @@ border-radius: 20px;
     background-image: url("../img/Isimbi1.jpg");
 }
 
-#banner h2{
+#banner3 h2{
     color: #fff;
     font-weight: 900;
     font-size: 22px;
 }
-#banner h3{
+#banner3 h3{
     color: #ec544e;
     font-weight: 900;
     font-size: 22px;
