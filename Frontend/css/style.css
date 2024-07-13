@@ -421,8 +421,9 @@ footer img {
     height: 40px;
 }
 .row img {
-    width: 50px;
+    width: 80px;
     height: 40px;
+    margin-left: 10px;
 }
 
 footer h4 {
