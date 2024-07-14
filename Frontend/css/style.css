@@ -642,4 +642,10 @@ footer .copyright {
     #banner3 .banner-box {
         width: 100%;
     }
+    #newsletter{
+        padding: 40px 20px;
+    }
+    #newsletter .form {
+        width: 100%;
+    }
 }
