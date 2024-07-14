@@ -88,7 +88,7 @@ body{
 
 /* Home page */
 #hero{
-    background-image: url('..');
+    background-image: url('../img/Isimbi1.jpg');
     background-color:rgb(222, 237, 243) ;
     height: 90vh;
     width: 100%;
@@ -487,6 +487,11 @@ footer .copyright {
 /* --------------------- @media screen --------------------------------- */
 
 @media (max-width:799px) {
+    #feature {
+        padding: 40px 20px;
+        margin: 0%;
+    }
+
     #navbar {
         display: flex;
         flex-direction: column;
@@ -532,4 +537,19 @@ footer .copyright {
      #bg-bag {
         display: none;
      }
+
+     #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+     }
+
+     #feature {
+        justify-content: center;
+     }
+     #feature .fe-box {
+        margin: 15px 15px;
+     }
+
+
 }
