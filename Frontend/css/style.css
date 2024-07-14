@@ -275,6 +275,7 @@ border-radius: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 40px;
 }
 
 #sm-banner .banner-box{
@@ -555,7 +556,19 @@ footer .copyright {
         justify-content: center;
      }
 
+     #product1 {
+        margin-bottom: 40px;
+     }
      #product1 .pro {
         margin: 15px;
+     }
+
+     #banner {
+        height: 20vh;
+     }
+
+     #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
      }
 }
