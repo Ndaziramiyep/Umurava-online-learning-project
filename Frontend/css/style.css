@@ -618,4 +618,12 @@ footer .copyright {
         width: 155px;
         margin: 0 15px 15px 15px;
     }
+
+    #product1{
+        padding: 0 40px;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+
 }
