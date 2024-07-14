@@ -347,7 +347,7 @@ border-radius: 20px;
 #newsletter{
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    /* min-height: 100px; */
     flex-wrap: wrap;
     align-items: center;
     background-image: url("../img/Isimbi1.jpg");
@@ -401,13 +401,14 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 80px;
+    background-color: #cfa7a7;
 }
 
 footer .col{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-top: 20px;
 
 }
@@ -469,4 +470,26 @@ footer .follow:hover, footer a:hover {
 footer .copyright {
     width: 100%;
     text-align: center;
+}
+
+/* --------------------- @media screen --------------------------------- */
+
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0, 0.01);
+        padding: 80px 0 0 10px;
+    }
+    #navbar li {
+        margin-bottom: 25px;
+    }
 }
