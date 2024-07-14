@@ -360,10 +360,8 @@ border-radius: 20px;
 #newsletter{
     display: flex;
     justify-content: space-between;
-    /* min-height: 100px; */
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("../img/Isimbi1.jpg");
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42;
@@ -577,5 +575,18 @@ footer .copyright {
      }
      #banner3 .banner-box{
         width: 28%;
+     }
+
+     #newsletter{
+        height: 15vh;
+
+     }
+
+     #newsletter .form {
+        width: 70%;
+     }
+
+     footer {
+        padding-top: 20px;
      }
 }
