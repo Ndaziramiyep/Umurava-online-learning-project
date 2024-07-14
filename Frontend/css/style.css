@@ -590,3 +590,15 @@ footer .copyright {
         padding-top: 20px;
      }
 }
+
+/* ------------------------ Another extra small devices----------------------- */
+
+@media (max-width:477px){
+    #header {
+        padding: 10px 30px;
+    }
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+}
