@@ -569,7 +569,9 @@ footer .copyright {
         min-width: 100%;
         height: 30vh;
      }
-
+     #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
      #banner3 {
         padding: 0 40px;
      }
@@ -625,5 +627,19 @@ footer .copyright {
     #product1 .pro {
         width: 100%;
     }
-
+    #banner{
+        height: 40vh;
+    }
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+    #banner3 {
+        padding: 0 20px;
+    }
+    #banner3 .banner-box {
+        width: 100%;
+    }
 }
