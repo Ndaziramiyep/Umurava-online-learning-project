@@ -43,6 +43,9 @@ body{
     top: 0px;
     left: 0; 
 }
+#header .logo{
+    width: 60px;
+}
 
 #navbar{
     display: flex;
