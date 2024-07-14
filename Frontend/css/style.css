@@ -551,5 +551,11 @@ footer .copyright {
         margin: 15px 15px;
      }
 
+     #product1 .pro-container {
+        justify-content: center;
+     }
 
+     #product1 .pro {
+        margin: 15px;
+     }
 }
