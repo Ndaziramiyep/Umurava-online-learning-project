@@ -558,7 +558,7 @@ footer .copyright {
         margin-bottom: 40px;
      }
      #product1 .pro {
-        margin: 15px;
+        margin: 13px; /*margin: 15px*/
      }
 
      #banner {
@@ -577,6 +577,7 @@ footer .copyright {
      }
      #banner3 .banner-box{
         width: 28%;
+        padding: 15px 5px;
      }
 
      #newsletter{
@@ -617,8 +618,8 @@ footer .copyright {
         justify-content: space-between;
     }
     #feature .fe-box{
-        width: 155px;
-        margin: 0 15px 15px 15px;
+        width: 150px;
+        margin: 10px 5px;
     }
 
     #product1{
