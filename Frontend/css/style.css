@@ -571,4 +571,11 @@ footer .copyright {
         min-width: 100%;
         height: 30vh;
      }
+
+     #banner3 {
+        padding: 0 40px;
+     }
+     #banner3 .banner-box{
+        width: 28%;
+     }
 }
