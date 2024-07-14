@@ -516,4 +516,13 @@ footer .copyright {
         color: #1a1a1a;
         font-size: 24px;
         padding-left: 20px;
+    }
+     #close {
+        outline: none;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+     }
 }
