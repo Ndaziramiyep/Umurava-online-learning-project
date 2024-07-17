@@ -366,6 +366,7 @@ border-radius: 20px;
     background-position: 20% 30%;
     background-color: #041e42;
     padding: 0 80px;
+    height: 25vh;
 }
 #newsletter h4{
     font-size: 22px;
@@ -413,6 +414,7 @@ footer{
     justify-content: space-between;
     padding: 0 80px;
     background-color: #cfa7a7;
+    padding-top: 60px;
 }
 
 footer .col{
@@ -504,7 +506,7 @@ footer .copyright {
 #pagination {
     text-align: center;
     padding: 30px 0px;
-    margin: 30px;
+    margin: 0px;
 }
 #pagination a {
     text-decoration: none;
@@ -643,12 +645,18 @@ footer .copyright {
      }
 
      #newsletter{
-        height: 15vh;
+        height: 25vh;
 
      }
 
+     #newsletter input {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+     }
+
      #newsletter .form {
-        width: 70%;
+        width: 80%;
+        heigh
      }
 
      footer {
