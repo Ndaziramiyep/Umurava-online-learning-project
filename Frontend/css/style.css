@@ -501,6 +501,25 @@ footer .copyright {
     color: #fff;
 }
 
+#pagination {
+    text-align: center;
+    padding: 30px 0px;
+    margin: 30px;
+}
+#pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 
 
 
