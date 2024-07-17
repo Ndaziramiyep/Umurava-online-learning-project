@@ -566,9 +566,15 @@ footer .copyright {
     font-size: 16px;
     margin-left: 10px;
 }
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
 #prodetails .single-pro-details button {
     background: #088178;
     color: #fff;
+}
+#prodetails .single-pro-details span {
+    line-height: 25px;
 }
 
 
