@@ -523,6 +523,10 @@ footer .copyright {
 }
 
 /* ---------- single product -------------- */
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
 
 #prodetails .single-pro-image{
     width: 40%;
@@ -539,7 +543,17 @@ footer .copyright {
     cursor: pointer;
 }
 
+#prodetails .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+}
 
+#prodetails .single-pro-details h4 {
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2 {
+    font-size: 26px;
+}
 
 
 
