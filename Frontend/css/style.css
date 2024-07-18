@@ -88,7 +88,7 @@ body{
 
 /* Home page */
 #hero{
-    background-image: url('../img/Isimbi1.jpg');
+    background-image: url('../img/b18.jpg');
     background-color:rgb(222, 237, 243) ;
     height: 90vh;
     width: 100%;
@@ -109,7 +109,7 @@ body{
     color: #088178;
 }
 #hero button {
-    background-image: url('..');
+    background-image: url('../img/button.png');
     background-color: transparent;
     color: #088178;
     border: 0;
@@ -118,7 +118,7 @@ body{
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
-    background-color: #fddde4;
+    /* background-color: #fddde4; */
 
 }
 
@@ -525,12 +525,14 @@ footer .copyright {
 /* ---------- single product -------------- */
 #prodetails {
     display: flex;
+    margin-left: 3%;
     margin-top: 20px;
 }
 
 #prodetails .single-pro-image{
     width: 40%;
-    margin-left: 50px;
+    margin-right: 3%;
+
 }
 
 .small-img-group {
@@ -783,5 +785,19 @@ footer .copyright {
     }
     footer .copyright{
         text-align: start;
+    }
+
+    /* single product  */
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details {
+        width: 100%;
     }
 }
