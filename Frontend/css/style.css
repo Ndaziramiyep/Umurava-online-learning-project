@@ -284,7 +284,7 @@ border-radius: 20px;
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-image: url("../img/banner/");
+    background-image: url("../img/banner/b19.jpg");
     min-width: 540px;
     height: 50vh;
     background-size: cover;
@@ -294,7 +294,7 @@ border-radius: 20px;
 }
 
 #sm-banner .banner-box2{
-    background-image: url("../img/banner/");
+    background-image: url("../img/banner/b19.jpg");
 }
 #sm-banner h4{
     color: #fff;
@@ -330,7 +330,7 @@ border-radius: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("../img/banner/");
+    background-image: url("../img/banner/b19.jpg");
     min-width: 29%;
     height: 30vh;
     background-size: cover;
@@ -341,10 +341,10 @@ border-radius: 20px;
 }
 
 #banner3 .banner-box2{
-    background-image: url("../img/banner/");
+    background-image: url("../img/banner/b19.jpg");
 }
 #banner3 .banner-box3{
-    background-image: url("../img/banner/");
+    background-image: url("../img/banner/b19.jpg");
 }
 
 #banner3 h2{
