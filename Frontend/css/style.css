@@ -43,8 +43,8 @@ body{
     top: 0px;
     left: 0; 
 }
-#header .logo{
-    width: 60px;
+.logo{
+    width: 100px;
 }
 
 #navbar{
@@ -89,7 +89,7 @@ body{
 /* Home page */
 #hero{
     background-image: url('../img/b18.jpg');
-    background-color:rgb(222, 237, 243) ;
+    /* background-color:rgb(222, 237, 243) ; */
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -132,7 +132,7 @@ body{
     flex-wrap: wrap;
 }
 #feature .fe-box{
-    width: 180px;
+    width: 150px;
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0,0,0, 0.03);
@@ -184,9 +184,9 @@ body{
     padding-top: 20px;
 }
 #product1 .pro{
-    width: 23%;
+    width: 20%;
     min-width: 250px;
-    padding: 10px 12px;
+    /* padding: 10px 12px; */
     border: 1px solid #cce7d0;
     border-radius: 25px;
     cursor: pointer;
@@ -250,7 +250,7 @@ border-radius: 20px;
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-image: url("../img/Isimbi1.jpg");
+    background-image: url("../img/banner/b2.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -275,7 +275,7 @@ border-radius: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 40px;
+    padding: 80px;
 }
 
 #sm-banner .banner-box{
@@ -284,16 +284,17 @@ border-radius: 20px;
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-image: url("../img/Isimbi1.jpg");
-    min-width: 580px;
+    background-image: url("../img/banner/b19.jpg");
+    min-width: 540px;
     height: 50vh;
     background-size: cover;
     background-position: center;
-    padding: 30px;
+    /* padding: 30px; */
+    cursor: pointer;
 }
 
 #sm-banner .banner-box2{
-    background-image: url("../img/Isimbi1.jpg");
+    background-image: url("../img/banner/b19.jpg");
 }
 #sm-banner h4{
     color: #fff;
@@ -329,8 +330,8 @@ border-radius: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("../img/Isimbi1.jpg");
-    min-width: 30%;
+    background-image: url("../img/banner/b19.jpg");
+    min-width: 29%;
     height: 30vh;
     background-size: cover;
     background-position: center;
@@ -340,10 +341,10 @@ border-radius: 20px;
 }
 
 #banner3 .banner-box2{
-    background-image: url("../img/Isimbi1.jpg");
+    background-image: url("../img/banner/b19.jpg");
 }
 #banner3 .banner-box3{
-    background-image: url("../img/Isimbi1.jpg");
+    background-image: url("../img/banner/b19.jpg");
 }
 
 #banner3 h2{
@@ -489,7 +490,7 @@ footer .copyright {
 /* ----------------------------------------------- shop page --------------------------- */
 
 #page-header {
-    background-image: url("../img/Isimbi1.jpg");
+    background-image: url("../img/banner/b19.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -698,8 +699,9 @@ footer .copyright {
 
      #hero {
         height: 70vh;
-        padding: 0 80px;
-        background-position: top 30% right 30%;
+        width: 100%;
+        /* padding: 0 80px; */
+        /* background-position: top 30% right 30%; */
      }
 
      #feature {
