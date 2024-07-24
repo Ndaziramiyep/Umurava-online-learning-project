@@ -881,4 +881,11 @@ footer .copyright {
     #prodetails .single-pro-details {
         width: 100%;
     }
+
+            /* Blog Page */
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
