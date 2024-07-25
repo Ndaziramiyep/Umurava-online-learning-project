@@ -704,6 +704,7 @@ footer .copyright {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 80px;
 }
 
 #contact-details .details {
@@ -733,8 +734,20 @@ footer .copyright {
     padding-right: 22px;
 }
 
+#contact-details .details li p {
+    margin: 0;
+    font-size: 14px;
+}
 
+#contact-details .map {
+    width: 55%;
+    height: 400px;
+}
 
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
 
 
 
