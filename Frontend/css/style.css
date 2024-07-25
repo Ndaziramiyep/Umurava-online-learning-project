@@ -2,6 +2,9 @@
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+a {
+    text-decoration: none;
+}
 
 button.normal{
     font-size: 14px;
@@ -778,9 +781,12 @@ footer .copyright {
         display: initial;
         position: absolute;
         top: 30px;
-        left: 30px;
-        color: #222;
-        font-size: 24px;
+        right: 30px;
+        /* top: 30px;
+        left: 30px; */
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
      }
      #bg-bag {
         display: none;
