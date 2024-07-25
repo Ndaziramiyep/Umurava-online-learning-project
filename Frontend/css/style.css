@@ -982,4 +982,13 @@ footer .copyright {
         width: 100%;
         margin-bottom: 20px;
     }
+    #about-head div {
+        padding: 0px;
+    }
+    #about-app .video {
+        width: 100%;
+    }
+    #feature .fe-box {
+        width: 100%;
+    }
 }
