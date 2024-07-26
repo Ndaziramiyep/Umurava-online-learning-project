@@ -1126,4 +1126,20 @@ footer .copyright {
      #contact-details .map {
         width: 100%;
      }
+
+     #form-details {
+        /* width: calc('100%-500px'); */
+        margin-left: 10px;
+        margin-right: 20px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+     }
+     
+     #form-details form {
+        width: 100%;
+        /* margin-bottom: 30px; */
+     }
+     #form-details form{
+        width: 90%;
+     }
 }
