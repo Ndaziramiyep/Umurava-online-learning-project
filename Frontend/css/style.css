@@ -704,7 +704,8 @@ footer .copyright {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 80px;
+    /* padding: 0 80px; */
+    padding: 40px;
 }
 
 #contact-details .details {
@@ -981,6 +982,14 @@ footer .copyright {
         #blog .blog-details {
             width: 100%;
             font-size: 20px;
+        }
+
+        /* contact page ---------------- */
+        #form-details {
+            padding: 40px;
+        }
+        #form-details form{
+            width: 50%;
         }
 }
 
