@@ -207,7 +207,7 @@ border-radius: 20px;
 }
 #product1 .pro .des{
     text-align: start;
-    padding: 10px 0;
+    padding: 10px 15px;
 }
 
 #product1 .pro .des span{
@@ -225,7 +225,7 @@ border-radius: 20px;
 }
 
 #product1 .pro .des h4{
-    padding-top: 40px;
+    padding-top: 10px;
     font-size: 15px;
     font-weight: 700;
     color: #088178;
