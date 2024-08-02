@@ -8,7 +8,7 @@
         #login-container{
             display: flex;
             flex-direction: column;
-            line-height: 40px;
+            line-height: 30px;
             width: 100%;
             position: relative;
             background-color: #1a1a1a;
@@ -29,7 +29,25 @@
             display: flex;
             flex-direction: column;
             position: absolute;
+            top: -10px;
         }
+        form h1{
+            padding: 0 30px;
+        }
+        .email,.password{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        form button{
+            width: 50%;
+            align-items: center;
+            position: relative;
+        }
+        form label:nth-child(1){
+            padding-right: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -37,8 +55,14 @@
         <div class="container">
             <form action="">
                 <h1>login form</h1>
-                Email:<input type="text">
-                Password: <input type="text">
+                <div class="email">
+                  <label for="">Email:</label>
+                  <input type="text" />
+               </div>
+               <div class="password">
+                <label for="">Password:</label> 
+                <input type="text" />
+               </div>
                 <button type="submit" id="btn">Login</button>
             </form>
         </div>
