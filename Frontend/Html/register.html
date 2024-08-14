@@ -93,5 +93,40 @@ button:hover {
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Clear previous error messages
+    document.getElementById('usernameError').style.display = 'none';
+    document.getElementById('passwordError').style.display = 'none';
+
+    // Get form values
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
+    
+    // Simple validation
+    let valid = true;
+
+    if (username === '') {
+        document.getElementById('usernameError').textContent = 'Username is required';
+        document.getElementById('usernameError').style.display = 'block';
+        valid = false;
+    }
+
+    if (password === '') {
+        document.getElementById('passwordError').textContent = 'Password is required';
+        document.getElementById('passwordError').style.display = 'block';
+        valid = false;
+    }
+
+    if (valid) {
+        // Handle form submission
+        alert('Form submitted successfully!');
+        // You can proceed with actual form submission here (e.g., AJAX request)
+    }
+});
+
+    </script>
 </body>
 </html>
