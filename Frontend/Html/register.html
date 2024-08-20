@@ -95,6 +95,63 @@ button:hover {
     </div>
     <script src="script.js"></script>
     <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('registrationForm');
+    const errorMessageDiv = document.getElementById('error-message');
+
+    form.addEventListener('submit', (event) => {
+        // Prevent form submission
+        event.preventDefault();
+
+        // Clear any previous error messages
+        errorMessageDiv.textContent = '';
+
+        // Get form values
+        const username = form.username.value.trim();
+        const email = form.email.value.trim();
+        const password = form.password.value;
+        const confirmPassword = form.confirmPassword.value;
+
+        let errorMessage = '';
+
+        // Validate username
+        if (username === '') {
+            errorMessage += 'Username is required.<br>';
+        }
+
+        // Validate email
+        if (email === '') {
+            errorMessage += 'Email is required.<br>';
+        } else if (!validateEmail(email)) {
+            errorMessage += 'Invalid email format.<br>';
+        }
+
+        // Validate passwords
+        if (password === '') {
+            errorMessage += 'Password is required.<br>';
+        }
+
+        if (confirmPassword === '') {
+            errorMessage += 'Confirm Password is required.<br>';
+        } else if (password !== confirmPassword) {
+            errorMessage += 'Passwords do not match.<br>';
+        }
+
+        // Display error message if any
+        if (errorMessage) {
+            errorMessageDiv.innerHTML = errorMessage;
+        } else {
+            // Form is valid, submit it
+            form.submit();
+        }
+    });
+
+    function validateEmail(email) {
+        // Simple email validation regex
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+});
 
     </script>
 </body>
