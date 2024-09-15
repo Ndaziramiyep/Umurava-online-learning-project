@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,155 +8,199 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-}
+        a {
+            text-decoration: none;
+            color: green;
+        }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
 
-.form-group {
-    margin-bottom: 15px;
-}
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
+        .form-group {
+            margin-bottom: 15px;
+        }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    /* background-color: #28a745; */
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-button:hover {
-    background-color: #0056b3;
-    /* background-color: #218838; */
-}
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            /* background-color: #28a745; */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-.error-message {
-    color: red;
-    margin-top: 10px;
-}
+        button:hover {
+            background-color: #0056b3;
+            /* background-color: #218838; */
+        }
 
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Register</h1>
         <form id="registrationForm">
             <div class="form-group">
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" autocomplete="off">
+                <div id="error-username" class="error-message"></div>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="text" id="email" name="email" autocomplete="off">
+                <div id="error-email" class="error-message"></div>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" autocomplete="off">
+                <div id="error-password" class="error-message"></div>
             </div>
             <div class="form-group">
                 <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="off">
+                <div id="error-confirmPassword" class="error-message"></div>
             </div>
             <button type="submit">Register</button>
+            <p>Have account, <a href="login.html">Login?</a></p>
             <div id="error-message" class="error-message"></div>
-            <p>Have account <a href="login.html">login</a></p>
         </form>
     </div>
     <script src="script.js"></script>
     <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('registrationForm');
-    const errorMessageDiv = document.getElementById('error-message');
+        document.addEventListener('DOMContentLoaded', () => {
+            let form = document.getElementById('registrationForm');
+            let errormesssage = document.getElementById('error-password');
+            let errorusername = document.getElementById('error-username');
+            let erroremail = document.getElementById('error-email');
+            let errorpassword = document.getElementById('error-password');
+            let errorconfirmPassword = document.getElementById('error-confirmPassword');
+            let valid = true;
+            errorusername.style.display = 'none'
+            errormessage.style.display = 'none'
+            erroremail.style.display = 'none'
+            errorpassword.style.display = 'none'
+            errorconfirmPassword.style.display = 'none'
 
-    form.addEventListener('submit', (event) => {
-        // Prevent form submission
-        event.preventDefault();
+            form.addEventListener('submit', (event) => {
+                // Prevent form submission
+                event.preventDefault();
 
-        // Clear any previous error messages
-        errorMessageDiv.textContent = '';
+                // Clear any previous error messages
+                // errorMessageDiv.textContent = '';
 
-        // Get form values
-        const username = form.username.value.trim();
-        const email = form.email.value.trim();
-        const password = form.password.value;
-        const confirmPassword = form.confirmPassword.value;
 
-        let errorMessage = '';
+                // Get form values
+                const username = form.username.value.trim();
+                const email = form.email.value.trim();
+                const password = form.password.value;
+                const confirmPassword = form.confirmPassword.value;
 
-        // Validate username
-        if (username === '') {
-            errorMessage += 'Username is required.<br>';
-        }
+                // let errorMessage = '';
 
-        // Validate email
-        if (email === '') {
-            errorMessage += 'Email is required.<br>';
-        } else if (!validateEmail(email)) {
-            errorMessage += 'Invalid email format.<br>';
-        }
+                // Validate username
+                if (username === '') {
+            errorusername.style.display = 'block'
+                    errorusername.textContent= 'Username is required.';
+                    valid = false;
+                }
 
-        // Validate passwords
-        if (password === '') {
-            errorMessage += 'Password is required.<br>';
-        }
+                // Validate email
+                if (email === '') {
+            erroremail.style.display = 'block'
+                    erroremail.textContent= 'Email is required.';
+                    valid = false;
+                } else if (!validateEmail(email)) {
+                    erroremail.style.display = 'block'
+                    erroremail.textContent= 'Invalid email format.';
+                    valid = false;
+                }
 
-        if (confirmPassword === '') {
-            errorMessage += 'Confirm Password is required.<br>';
-        } else if (password !== confirmPassword) {
-            errorMessage += 'Passwords do not match.<br>';
-        }
+                // Validate passwords
+                if (password === '') {
+            errorpassword.style.display = 'block'
+                    errorpassword.textContent= 'Password is required.';
+                    valid = false;
+                }
 
-        // Display error message if any
-        if (errorMessage) {
-            errorMessageDiv.innerHTML = errorMessage;
-        } else {
-            // Form is valid, submit it
-            form.submit();
-        }
-    });
+                if (confirmPassword === '') {
+            errorconfirmPassword.style.display = 'block'
+                    errorconfirmPassword.textContent= 'Confirm Password is required.';
+                    valid = false;
+                } else if (password !== confirmPassword) {
+            errorconfirmPassword.style.display = 'block'
+                    errorconfirmPassword.textContent= 'Passwords do not match.';
+                    valid = false;
+                }
+                // Display error message if any
+                if (valid) {
+                    // form.submit();
+                    // errormesssage.style.display = 'block'
+                    // errormessage.textContent ='Form submission successfully!';
+                    // Handle form submission
+        alert('Form submitted successfully!');
+        // You can proceed with actual form submission here (e.g., AJAX request)
+        document.getElementById('username').value= '';
+        document.getElementById('password').value= '';
+                    form.submit();
+                }
+                
+                
+                
+                //  else {
+                //     // Form is valid, submit it
+                //     form.submit();
+                // }
+            });
 
-    function validateEmail(email) {
-        // Simple email validation regex
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
-    }
-});
+            function validateEmail(email) {
+                // Simple email validation regex
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+        });
 
     </script>
 </body>
+
 </html>
