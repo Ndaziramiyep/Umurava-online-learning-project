@@ -110,7 +110,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             let form = document.getElementById('registrationForm');
-            let errormesssage = document.getElementById('error-password');
+            let errormesssage = document.getElementById('error-message');
             let errorusername = document.getElementById('error-username');
             let erroremail = document.getElementById('error-email');
             let errorpassword = document.getElementById('error-password');
@@ -178,6 +178,7 @@
                     // errormesssage.style.display = 'block'
                     // errormessage.textContent ='Form submission successfully!';
                     // Handle form submission
+            errormesssage.style.display = 'block'
         alert('Form submitted successfully!');
         // You can proceed with actual form submission here (e.g., AJAX request)
         document.getElementById('username').value= '';
