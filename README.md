@@ -1,7 +1,5 @@
 # django-courses (Learning Management System)
 
-Introducing **Django Courses**: the all-in-one solution for educators who want to launch their Online Course Website quickly and effortlessly.
-
 - **Effortlessly manage your courses and lectures:** Organize your content seamlessly, categorize Courses, and manage lessons.
 - **Empower your students:** Provide a smooth learning experience with intuitive navigation, and secure user accounts.
 
@@ -10,10 +8,7 @@ This Learning Management System project is built with
 1. **Front-End:** HTML, CSS, JavaScript and Bootstrap
 2. **Back-End:** Django (Python)
 3. **Database:** SQLite (_Any other database can be added_)
-
-_**ADD a STAR ⭐️ to this project 👆 if you like "Django Courses" project.**_
-
-
+4. 
 # 🤩 Features of the Project 
 
 ## A. Admin Can
@@ -29,11 +24,6 @@ _**ADD a STAR ⭐️ to this project 👆 if you like "Django Courses" project.*
 4. See Enrolled Course or Search for new Course
 5. Update Profile
 6. Change Password
-
-
-# 🤝 Support This Project 
-[Buy Me a Coffee ☕️](https://buymeacoffee.com/vijaythapa)
-
 
 # ⚙️ How to Install and Run this Project? 
 
@@ -122,9 +112,3 @@ Then Add Email, Username and Password
 
 Username: _admin_
 Password: _admin_
-
-
-## For Sponsor or Projects Enquiry
-1. Email - hi@vijaythapa.com
-2. LinkedIn - [vijaythapa](https://www.linkedin.com/in/vijaythapa "Vijay Thapa on LinkedIn")
-3. Donate - [https://buymeacoffee.com/vijaythapa](https://buymeacoffee.com/vijaythapa)
