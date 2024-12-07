@@ -1,0 +1,53 @@
+{% extends "account/base.html" %}
+
+{% load static %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block title %}
+Sign In | Vijay Thapa
+{% endblock title %}
+
+{% block content %}
+    <div class="album py-5 bg-light">
+        {% include 'partials/_messages.html' %}
+        <div class="container">
+
+            <form class="form-signin" method="POST" action="{% url 'account_login' %}">
+                {% csrf_token %}
+                
+                <h1 class="h3 mb-3 font-weight-normal text-center">Log in to your Account!</h1>
+                <hr>
+
+                {{ form.as_p }}
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+
+
+                {% get_providers as socialaccount_providers %}
+
+                {% if socialaccount_providers %}
+                    <br>
+                    <a href="{% provider_login_url "google" process="login" %}" class="btn btn-md btn-outline-dark btn-block">
+                        <img src="{% static 'images/google.png' %}" alt="Google Logo" width="30" /> Log in with Google
+                    </a>
+                    <a href="{% provider_login_url "github" process="login" %}" class="btn btn-md btn-dark btn-block">
+                        <img src="{% static 'images/github.png' %}" alt="Github Logo White" width="30" /> Log in with Github
+                    </a>
+                {% endif %}
+
+                <p class="mt-5 mb-3 text-muted text-center">or <a href="{% url 'account_reset_password' %}">Forgot Password?</a></p>
+
+                <p class="mb-3 text-muted text-center">Don't have an account? <a href="{% url 'account_signup' %}"><strong>Sign up</strong></a></p>
+
+            </form>
+
+        </div>
+    </div>
+
+{% endblock %}

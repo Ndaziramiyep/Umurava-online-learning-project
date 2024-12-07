@@ -1,0 +1,26 @@
+<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'lecture' course.course_slug %}">
+              <span data-feather="home"></span>
+              <strong>Course Content</strong> - <small>{{ course.course_title }}</small> <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          {% if lectures %}
+            {% for lecture in lectures %}
+                <li class="nav-item">
+                    <a class="nav-link {% if lecture.id == lecture_selected.id %}active{% endif %}" href="{% url 'lecture-selected' course.course_slug lecture.lecture_slug %}">
+                    <span data-feather="file-text"></span>
+                    {{ lecture.lecture_title }}
+                    </a>
+                </li>
+            {% endfor %}
+          {% endif %}
+
+          
+        </ul>
+
+      </div>
+    </nav>

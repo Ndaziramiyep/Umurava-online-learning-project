@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Django Courses - Launch Your Online Course Empire
+{% endblock title %}
+
+
+{% block content %}
+
+{% include 'partials/_messages.html' %}
+
+<section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="mb-5">Launch Your Tech Career <img width="60" height="60" src="https://img.icons8.com/papercut/60/launched-rocket.png" alt="launched-rocket"/></h1>
+      <p class="lead text-muted">Master in-demand skills with expert-led courses. Level up your coding skills. Database, web app dev, and more - taught by industry pros.</p>
+      <p class="lead text-muted">"Don't just code, build a future. Limited-time discount!"</p>
+      <p>
+        <a href="{% url 'account_signup' %}" class="btn btn-primary my-2">Get Started</a>
+        <a href="{% url 'courses' %}" class="btn btn-outline-secondary my-2">Explore Courses</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+
+      {% if courses %}
+        {% for course in courses %}
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <a href="{% url 'course-detail' course.course_slug %}">
+              {% if course.course_image %}
+              <img src="{{ course.course_image.url }}" class="img-fluid" alt="{{ course.course_title }}">
+              {% else %}
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>{{ course.course_title }}</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              {% endif %}
+              </a>
+              <div class="card-body">
+                <p class="card-text">{{ course.course_title }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="{% url 'course-detail' course.course_slug %}">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View Course</button>
+                    <a>
+                  </div>
+                  <small class="text-muted">Created <strong>{{ course.course_created_at|timesince }}</strong> ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+        
+
+      </div>
+    </div>
+  </div>
+{% endblock content %}
